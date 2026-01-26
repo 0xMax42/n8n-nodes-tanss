@@ -1,16 +1,41 @@
-A new **TANSS Node** was released on **October 27, 2025** [here](https://github.com/BuddiesD/n8n-nodes-tanss).  
-Please note that **existing credentials are not compatible** due to the introduction of **2FA (Two-Factor Authentication)**.
-
-You can install both versions, but **2FA functionality will only be visible after uninstalling** the old package:  
-[n8n-nodes-tanss-api](https://www.npmjs.com/package/n8n-nodes-tanss-api)
-
-New: https://www.npmjs.com/package/n8n-nodes-tanss
+# n8n-nodes-tanss-api
 
 
-**Status / Progress**  
-Progress: **74 / 256 (1 not in API Docs)** (28%)
+This is an [n8n](https://n8n.io/) community node.
 
-## To-Do / Progress
+## Installation
+
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+
+## Credentials
+
+You only need to provide:
+
+- `username`
+- `password`
+- optionally: `TOTP Secret Key` (for two-factor authentication)
+
+or alternatively you can provide an already generated `TANSS API Token` (depending on the end points intended for use).
+
+## Compatibility
+
+Compatible with n8n@1.60.0 or later
+Tested with TANSS API. Version: 10.10.0
+
+## Resources
+
+* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
+* [Tanss API documentation](https://api-doc.tanss.de/)
+
+## Development
+
+This project can be developed using a regular local Node.js setup.
+
+Optionally, a dev container configuration is included to provide a ready-to-use development environment with the required Node.js version and basic editor tooling.
+
+### Implementation Progress
+
+Progress: **94 / 256 (1 not in API Docs)** (36%)
 
 <details>
 <summary><strong>Complete overview</strong></summary>
@@ -365,40 +390,40 @@ Progress: **74 / 256 (1 not in API Docs)** (28%)
   - [ ] [GET] Get global ticket panels
 </details>
 <details>
-<summary><strong>operating systems [0/5] - ToDo</strong></summary>
+<summary><strong>operating systems [5/5] - Done</strong></summary>
 
-  - [ ] [POST] Creates a new os
-  - [ ] [GET] Get a list of all os
-  - [ ] [PUT] Updates a os
-  - [ ] [GET] Get a specific os
-  - [ ] [DEL] Deletes a specific os
+  - [x] [POST] Creates a new os
+  - [x] [GET] Get a list of all os
+  - [x] [PUT] Updates a os
+  - [x] [GET] Get a specific os
+  - [x] [DEL] Deletes a specific os
 </details>
 <details>
-<summary><strong>manufacturer [0/5] - ToDo</strong></summary>
+<summary><strong>manufacturer [5/5] - Done</strong></summary>
 
-  - [ ] [POST] Creates a new manufacturer
-  - [ ] [GET] Get a list of all manufacturers
-  - [ ] [PUT] Updates a manufacturer
-  - [ ] [GET] Get a manufacturer
-  - [ ] [DEL] Deletes a manufacturer
+  - [x] [POST] Creates a new manufacturer
+  - [x] [GET] Get a list of all manufacturers
+  - [x] [PUT] Updates a manufacturer
+  - [x] [GET] Get a manufacturer
+  - [x] [DEL] Deletes a manufacturer
 </details>
 <details>
-<summary><strong>cpus [0/5] - ToDo</strong></summary>
+<summary><strong>cpus [5/5] - Done</strong></summary>
 
-  - [ ] [POST] Creates a new cpu
-  - [ ] [GET] Get a list of all cpus
-  - [ ] [PUT] Updates a cpu
-  - [ ] [GET] Get a cpu
-  - [ ] [DEL] Deletes a cpu
+  - [x] [POST] Creates a new cpu
+  - [x] [GET] Get a list of all cpus
+  - [x] [PUT] Updates a cpu
+  - [x] [GET] Get a cpu
+  - [x] [DEL] Deletes a cpu
 </details>
 <details>
-<summary><strong>hddTypes [0/5] - ToDo</strong></summary>
+<summary><strong>hddTypes [5/5] - Done</strong></summary>
 
-  - [ ] [POST] Creates a new hdd type
-  - [ ] [GET] Get a list of all hdd types
-  - [ ] [PUT] Updates a hdd type
-  - [ ] [GET] Get a hdd type
-  - [ ] [DEL] Deletes a hdd type
+  - [x] [POST] Creates a new hdd type
+  - [x] [GET] Get a list of all hdd types
+  - [x] [PUT] Updates a hdd type
+  - [x] [GET] Get a hdd type
+  - [x] [DEL] Deletes a hdd type
 </details>
 <details>
 <summary><strong>identify [0/1] - ToDo</strong></summary>
@@ -435,53 +460,3 @@ Progress: **74 / 256 (1 not in API Docs)** (28%)
 </details>
 
 </details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# n8n-nodes-tanss
-
-
-This is an n8n community node. It lets you use the TANSS API in your n8n workflows.
-
-[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
-
-[Installation](#installation)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Resources](#resources)
-
-## Installation
-
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
-
-## Credentials
-
-You only need to provide:
-
-- `username`
-- `password`
-- optionally: `TOTP Secret Key` (for two-factor authentication)
-
-## Compatibility
-
-Compatible with n8n@1.60.0 or later
-Tested with TANSS API. Version: 10.10.0
-
-## Resources
-
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-* [Tanss API documentation](https://api-doc.tanss.de/)
